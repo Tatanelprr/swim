@@ -80,11 +80,6 @@ export function FolderViewClient({ folderId }: { folderId: string | null }) {
         ) : null}
       </div>
 
-      {/* Création */}
-      <section className="rounded-2xl border border-white/10 bg-white/5 p-4">
-        <CreateFolder parentId={folderId} />
-      </section>
-
       {/* Liste triée */}
       <section className="rounded-2xl border border-white/10 bg-white/5 p-4">
         <FolderList parentId={folderId} sortBy={sortBy} sortDir={sortDir} />

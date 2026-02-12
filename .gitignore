@@ -48,6 +48,3 @@ yarn-error.log*
 # prisma generated client
 /generated
 .prisma
-
-public/uploads
-.env

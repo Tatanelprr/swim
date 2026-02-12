@@ -30,8 +30,6 @@ export function Sidebar({ isDev, showRootCreate }: SidebarProps) {
     <FolderTree />
   </div>
       </nav>
-
-      {showRootCreate ? <CreateRootFolderCard /> : null}
     </aside>
   );
 }
