@@ -106,6 +106,7 @@ model File {
   size      Int      // Taille en octets
   type      String   // ex: "image/png", "application/pdf"
   s3Key     String   @unique // L'identifiant unique du fichier sur S3
+  url       String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 

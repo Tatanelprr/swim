@@ -2,13 +2,7 @@
 
 import { Trash, File as FileIcon } from "lucide-react";
 
-export function FileRow({
-  file,
-  onDelete,
-}: {
-  file: { id: string; name: string; s3Key: string };
-  onDelete: () => void;
-}) {
+export function FileRow({ file, onDelete, }: { file: { id: string; name: string; s3Key: string; url: string }; onDelete: () => void;}) {
   return (
     <li
       draggable
@@ -22,7 +16,7 @@ export function FileRow({
       <div className="flex min-w-0 items-center gap-2">
         <FileIcon size={18} className="shrink-0 text-white/70" />
         <a
-          href={`/uploads/${file.s3Key}`}
+          href={file.url} 
           target="_blank"
           rel="noopener noreferrer"
           className="truncate text-sm text-white/85 hover:underline"
